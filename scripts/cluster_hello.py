@@ -17,3 +17,5 @@ print("Job ID:", os.environ.get("SLURM_JOB_ID", "none"))
 print("Resamples:", n_boot)
 print(f"Mean daily GPP: {sum(gpp) / 730:.2f} "
       f"(95% CI {lo:.2f} to {hi:.2f})")
+
+# Author: Ben Löw
