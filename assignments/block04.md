@@ -17,7 +17,7 @@ Loading data from `.csv` files:
 
 ```{python}
 # ---- File locations ----
-CA_Ca3_file = 'data/raw/AMF_CA-Ca3_FLUXNET_2001-2024_v1.3_r1.zip/AMF_CA-Ca3_FLUXNET_FLUXMET_HH_2001-2024_v1.3_r1.csv'
+CA_Ca3_file = 'data/processed/AMF_CA-Ca3_FLUXNET_2001-2024_v1.3_r1/AMF_CA-Ca3_FLUXNET_FLUXMET_HH_2001-2024_v1.3_r1.csv'
 US_Whs_file = 'data/raw/'
 CN_Nmn_file = 'data/raw/'
 FR_Pue_file = 'data/raw/'
@@ -66,6 +66,10 @@ AU_Rig_hh = pd.read_csv(
 | AU-Rig | Riggs Creek | GRA | -36.6499 | 145.5759 | 2011-2017 | OzFlux | Beringer, J., McHugh, I. (2026): Riggs Creek FLUXNET Release 2026_r1 . Version 2026_r1. Terrestrial Ecosystem Research Network (TERN). (Dataset). |
 
 [Map:]{.underline}
+
+```{python}
+
+```
 
 ------------------------------------------------------------------------
 

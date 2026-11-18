@@ -69,3 +69,18 @@ site_name
 2026-11-18 13:28:47,540 - fluxnet_shuttle.shuttle - INFO - Batch 1 complete: 4 / 5 downloaded so far
 2026-11-18 13:28:47,541 - fluxnet_shuttle.shuttle - INFO - Downloaded data for 4/5 sites
 2026-11-18 13:28:47,541 - fluxnet_shuttle.main - INFO - Downloaded 4 files
+2026-11-18 18:28:10,568 - fluxnet_shuttle.shuttle - INFO - Starting download with 1 site IDs: ['AU-Rhg'] and snapshot file: data/snapshots/fluxnet_shuttle_snapshot_20261118T113320.csv
+2026-11-18 18:28:10,568 - fluxnet_shuttle.shuttle - ERROR - Site ID AU-Rhg not found in snapshot file.
+2026-11-18 18:28:10,569 - fluxnet_shuttle.main - ERROR - FLUXNET Shuttle error: Site ID AU-Rhg not found in snapshot file.
+2026-11-18 18:28:23,351 - fluxnet_shuttle.shuttle - INFO - Starting download with 1 site IDs: ['AU-Rig'] and snapshot file: data/snapshots/fluxnet_shuttle_snapshot_20261118T113320.csv
+2026-11-18 18:28:23,352 - fluxnet_shuttle.shuttle - INFO - Downloading data for site AU-Rig from data hub TERN
+2026-11-18 18:28:23,356 - fluxnet_shuttle.core.config - INFO - Loaded default configuration from package
+2026-11-18 18:28:23,356 - fluxnet_shuttle.shuttle - INFO - Downloading in batches of 10
+2026-11-18 18:28:23,357 - fluxnet_shuttle.shuttle - INFO - TERN: downloading site AU-Rig data file: TERN_AU-Rig_FLUXNET_2011-2017_v1.3_r1.zip
+2026-11-18 18:28:23,359 - fluxnet_shuttle.core.config - INFO - Loaded default configuration from package
+2026-11-18 18:28:23,359 - fluxnet_shuttle.core.shuttle - INFO - Initialized FluxnetShuttle with data hubs: ['ameriflux', 'icos', 'tern']
+2026-11-18 18:28:37,218 - fluxnet_shuttle.core.shuttle - INFO - Completed download_dataset: 0 results, 0 errors
+2026-11-18 18:28:37,218 - fluxnet_shuttle.shuttle - INFO - TERN: file downloaded successfully to data/raw/TERN_AU-Rig_FLUXNET_2011-2017_v1.3_r1.zip
+2026-11-18 18:28:37,218 - fluxnet_shuttle.shuttle - INFO - Batch 1 complete: 1 / 1 downloaded so far
+2026-11-18 18:28:37,218 - fluxnet_shuttle.shuttle - INFO - Downloaded data for 1/1 sites
+2026-11-18 18:28:37,219 - fluxnet_shuttle.main - INFO - Downloaded 1 files
