@@ -1,0 +1,71 @@
+2026-11-18 11:32:49,091 - fluxnet_shuttle.main - INFO - Available FLUXNET data hub plugins:
+2026-11-18 11:32:49,091 - fluxnet_shuttle.main - INFO -   - AmeriFlux (ameriflux)
+2026-11-18 11:32:49,091 - fluxnet_shuttle.main - INFO -   - ICOS (icos)
+2026-11-18 11:32:49,091 - fluxnet_shuttle.main - INFO -   - TERN (tern)
+2026-11-18 11:33:20,828 - fluxnet_shuttle.core.config - INFO - Loaded default configuration from package
+2026-11-18 11:33:20,828 - fluxnet_shuttle.core.shuttle - INFO - Initialized FluxnetShuttle with data hubs: ['ameriflux', 'icos', 'tern']
+2026-11-18 11:33:20,830 - fluxnet_shuttle.plugins.ameriflux - INFO - Fetching AmeriFlux sites...
+2026-11-18 11:33:26,003 - fluxnet_shuttle.plugins.ameriflux - INFO - Retrieved metadata for 407 AmeriFlux sites
+2026-11-18 11:33:27,360 - fluxnet_shuttle.plugins.ameriflux - INFO - Retrieved download links for 407 sites
+2026-11-18 11:33:27,895 - fluxnet_shuttle.plugins.ameriflux - INFO - Retrieved citations for 407 sites
+2026-11-18 11:33:28,672 - fluxnet_shuttle.plugins.icos - INFO - Fetching ICOS sites...
+2026-11-18 11:33:31,454 - fluxnet_shuttle.plugins.tern - INFO - Fetching TERN sites...
+2026-11-18 11:33:31,454 - fluxnet_shuttle.plugins.tern - INFO - Fetching BIF metadata from https://dap.tern.org.au/thredds/fileServer/ecosystem_process/fluxnet/BIF_all_sites.csv
+2026-11-18 11:33:34,035 - fluxnet_shuttle.plugins.tern - INFO - Successfully parsed BIF metadata for 54 sites
+2026-11-18 11:33:34,036 - fluxnet_shuttle.plugins.tern - INFO - Fetching product metadata from https://dap.tern.org.au/thredds/fileServer/ecosystem_process/fluxnet/TERN_THREDDS_catalogue.csv
+2026-11-18 11:33:35,464 - fluxnet_shuttle.plugins.tern - INFO - Successfully parsed product metadata for 52 sites
+2026-11-18 11:33:35,466 - fluxnet_shuttle.plugins.tern - INFO - Processing 52 sites with complete metadata
+2026-11-18 11:33:35,517 - fluxnet_shuttle.plugins.tern - WARNING - Error processing site AU-GWW: 1 validation error for BadmSiteGeneralInfo
+site_name
+  String should have at least 1 character [type=string_too_short, input_value='', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_too_short. Skipping this site.
+2026-11-18 11:33:35,569 - fluxnet_shuttle.core.shuttle - INFO - Completed get_all_sites: 783 results, 0 errors
+2026-11-18 11:33:35,570 - fluxnet_shuttle.shuttle - INFO - Wrote FLUXNET dataset snapshot to data/snapshots/fluxnet_shuttle_snapshot_20261118T113320.csv
+2026-11-18 11:33:35,570 - fluxnet_shuttle.shuttle - INFO - Data hub counts: {'AmeriFlux': 381, 'ICOS': 351, 'TERN': 51}
+2026-11-18 11:33:35,570 - fluxnet_shuttle.main - INFO - FLUXNET Shuttle snapshot written to data/snapshots/fluxnet_shuttle_snapshot_20261118T113320.csv
+2026-11-18 13:27:01,312 - fluxnet_shuttle.shuttle - INFO - Starting download with 5 site IDs: ['FR-Pue', 'CA-Ca3', 'AU-Rig', 'CN-Nmn', 'US-Whs'] and snapshot file: data/snapshots/fluxnet_shuttle_snapshot_20261118T113320.csv
+2026-11-18 13:27:01,312 - fluxnet_shuttle.shuttle - INFO - Downloading data for site FR-Pue from data hub ICOS
+2026-11-18 13:27:01,312 - fluxnet_shuttle.shuttle - INFO - Downloading data for site CA-Ca3 from data hub AmeriFlux
+2026-11-18 13:27:01,312 - fluxnet_shuttle.shuttle - INFO - Downloading data for site AU-Rig from data hub TERN
+2026-11-18 13:27:01,312 - fluxnet_shuttle.shuttle - INFO - Downloading data for site CN-Nmn from data hub ICOS
+2026-11-18 13:27:01,312 - fluxnet_shuttle.shuttle - INFO - Downloading data for site US-Whs from data hub AmeriFlux
+2026-11-18 13:27:01,317 - fluxnet_shuttle.core.config - INFO - Loaded default configuration from package
+2026-11-18 13:27:01,317 - fluxnet_shuttle.shuttle - INFO - Downloading in batches of 10
+2026-11-18 13:27:01,317 - fluxnet_shuttle.shuttle - INFO - ICOS: downloading site FR-Pue data file: ICOS_FR-Pue_FLUXNET_2000-2026_v1.3_r1.zip
+2026-11-18 13:27:01,320 - fluxnet_shuttle.core.config - INFO - Loaded default configuration from package
+2026-11-18 13:27:01,320 - fluxnet_shuttle.core.shuttle - INFO - Initialized FluxnetShuttle with data hubs: ['ameriflux', 'icos', 'tern']
+2026-11-18 13:27:01,323 - fluxnet_shuttle.shuttle - INFO - AmeriFlux: downloading site CA-Ca3 data file: AMF_CA-Ca3_FLUXNET_2001-2024_v1.3_r1.zip
+2026-11-18 13:27:01,325 - fluxnet_shuttle.core.config - INFO - Loaded default configuration from package
+2026-11-18 13:27:01,325 - fluxnet_shuttle.core.shuttle - INFO - Initialized FluxnetShuttle with data hubs: ['ameriflux', 'icos', 'tern']
+2026-11-18 13:27:01,326 - fluxnet_shuttle.plugins.ameriflux - INFO - Logging download request to AmeriFlux for 1 files
+2026-11-18 13:27:01,327 - fluxnet_shuttle.shuttle - INFO - TERN: downloading site AU-Rig data file: TERN_AU-Rig_FLUXNET_2011-2017_v1.3_r1.zip
+2026-11-18 13:27:01,331 - fluxnet_shuttle.core.config - INFO - Loaded default configuration from package
+2026-11-18 13:27:01,332 - fluxnet_shuttle.core.shuttle - INFO - Initialized FluxnetShuttle with data hubs: ['ameriflux', 'icos', 'tern']
+2026-11-18 13:27:01,333 - fluxnet_shuttle.shuttle - INFO - ICOS: downloading site CN-Nmn data file: CNF_CN-Nmn_FLUXNET_2015-2019_v1.3_r1.zip
+2026-11-18 13:27:01,335 - fluxnet_shuttle.core.config - INFO - Loaded default configuration from package
+2026-11-18 13:27:01,335 - fluxnet_shuttle.core.shuttle - INFO - Initialized FluxnetShuttle with data hubs: ['ameriflux', 'icos', 'tern']
+2026-11-18 13:27:01,336 - fluxnet_shuttle.shuttle - INFO - AmeriFlux: downloading site US-Whs data file: AMF_US-Whs_FLUXNET_2007-2025_v1.3_r1.zip
+2026-11-18 13:27:01,338 - fluxnet_shuttle.core.config - INFO - Loaded default configuration from package
+2026-11-18 13:27:01,339 - fluxnet_shuttle.core.shuttle - INFO - Initialized FluxnetShuttle with data hubs: ['ameriflux', 'icos', 'tern']
+2026-11-18 13:27:01,339 - fluxnet_shuttle.plugins.ameriflux - INFO - Logging download request to AmeriFlux for 1 files
+2026-11-18 13:27:02,260 - fluxnet_shuttle.plugins.ameriflux - INFO - Successfully logged download request to AmeriFlux (status: 200)
+2026-11-18 13:27:02,261 - fluxnet_shuttle.plugins.ameriflux - INFO - Successfully logged download request for CA-Ca3: AMF_CA-Ca3_FLUXNET_2001-2024_v1.3_r1.zip
+2026-11-18 13:27:02,290 - fluxnet_shuttle.plugins.ameriflux - INFO - Successfully logged download request to AmeriFlux (status: 200)
+2026-11-18 13:27:02,291 - fluxnet_shuttle.plugins.ameriflux - INFO - Successfully logged download request for US-Whs: AMF_US-Whs_FLUXNET_2007-2025_v1.3_r1.zip
+2026-11-18 13:27:46,532 - fluxnet_shuttle.core.shuttle - INFO - Completed download_dataset: 0 results, 0 errors
+2026-11-18 13:27:46,533 - fluxnet_shuttle.shuttle - INFO - AmeriFlux: file downloaded successfully to data/raw/AMF_CA-Ca3_FLUXNET_2001-2024_v1.3_r1.zip
+2026-11-18 13:27:53,346 - fluxnet_shuttle.core.shuttle - INFO - Completed download_dataset: 0 results, 0 errors
+2026-11-18 13:27:53,346 - fluxnet_shuttle.shuttle - INFO - AmeriFlux: file downloaded successfully to data/raw/AMF_US-Whs_FLUXNET_2007-2025_v1.3_r1.zip
+2026-11-18 13:28:21,222 - fluxnet_shuttle.core.shuttle - INFO - Completed download_dataset: 0 results, 0 errors
+2026-11-18 13:28:21,222 - fluxnet_shuttle.shuttle - INFO - ICOS: file downloaded successfully to data/raw/CNF_CN-Nmn_FLUXNET_2015-2019_v1.3_r1.zip
+2026-11-18 13:28:34,752 - fluxnet_shuttle.core.base - ERROR - HTTP request failed: Response payload is not completed: <ContentLengthError: 400, message='Not enough data to satisfy content length header (received 12078294 of 67033965 bytes).'>
+2026-11-18 13:28:34,752 - fluxnet_shuttle.core.shuttle - ERROR - Failed to download dataset for site AU-Rig from tern: Plugin 'tern': Failed to make HTTP request
+2026-11-18 13:28:34,753 - fluxnet_shuttle.core.registry - WARNING - Plugin 'tern' error in 'download_file': Plugin 'tern': Failed to make HTTP request
+2026-11-18 13:28:34,753 - fluxnet_shuttle.core.shuttle - INFO - Completed download_dataset: 0 results, 1 errors
+2026-11-18 13:28:34,753 - fluxnet_shuttle.shuttle - ERROR - Failed to download TERN file for site AU-Rig: Plugin 'tern': Failed to make HTTP request
+2026-11-18 13:28:47,540 - fluxnet_shuttle.core.shuttle - INFO - Completed download_dataset: 0 results, 0 errors
+2026-11-18 13:28:47,540 - fluxnet_shuttle.shuttle - INFO - ICOS: file downloaded successfully to data/raw/ICOS_FR-Pue_FLUXNET_2000-2026_v1.3_r1.zip
+2026-11-18 13:28:47,540 - fluxnet_shuttle.shuttle - ERROR - Failed to download TERN_AU-Rig_FLUXNET_2011-2017_v1.3_r1.zip for site AU-Rig: Failed to download TERN file for site AU-Rig: Plugin 'tern': Failed to make HTTP request
+2026-11-18 13:28:47,540 - fluxnet_shuttle.shuttle - INFO - Batch 1 complete: 4 / 5 downloaded so far
+2026-11-18 13:28:47,541 - fluxnet_shuttle.shuttle - INFO - Downloaded data for 4/5 sites
+2026-11-18 13:28:47,541 - fluxnet_shuttle.main - INFO - Downloaded 4 files

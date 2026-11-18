@@ -1,0 +1,17 @@
+# R
+.Rhistory
+.RData
+.Rproj.user/
+# Python
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+# OS
+.DS_Store
+Thumbs.db
+# Large or generated data (keep data outside Git; document how to get it)
+data/raw/*
+!data/raw/XX-Demo_daily_2022-2023.csv
+data/processed/*
+!data/processed/.gitkeep
+Rplots.pdf
