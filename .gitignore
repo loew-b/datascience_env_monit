@@ -15,4 +15,5 @@ data/raw/*
 !data/raw/XX-Demo_daily_2022-2023.csv
 data/processed/*
 !data/processed/.gitkeep
+data/external/*
 Rplots.pdf
