@@ -4,7 +4,7 @@ Environmental Monitoring and Data Analysis · Block 5 · University of Freiburg
 
 Every Block 5 Python script imports this file. Set your student number ONCE
 here, or pass it on the command line:
-    python3 scripts/block5/04_soilgrids.py --student 07
+    python3 scripts/block5/04_soilgrids.py --student 39
 Run all scripts from your project folder (the one with data/ and scripts/).
 """
 import argparse
@@ -13,7 +13,7 @@ from pathlib import Path
 import pandas as pd
 
 # ---- Your settings -----------------------------------------------------------
-MY_STUDENT = "07"          # your student number from tower_sets_block4.csv
+MY_STUDENT = "39"          # your student number from tower_sets_block4.csv
 MY_SITES = None            # or pick sites yourself, e.g. ["DE-Hai", "FR-Hes"]
 TOWER_CSV = "tower_sets_block4.csv"   # from ILIAS (folder DATA), same file as Block 4
 

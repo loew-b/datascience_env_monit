@@ -11,7 +11,7 @@ Run the download scripts first; whatever is missing is simply left out.
 Packages: pip install pandas numpy
 Output:   data/processed/site_static.csv, data/processed/site_daily.csv
 
-Run: python3 scripts/block5/09_merge.py --student 07
+Run: python3 scripts/block5/09_merge.py --student 39
 """
 import re
 import sys

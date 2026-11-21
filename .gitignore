@@ -9,6 +9,10 @@ __pycache__/
 .ipynb_checkpoints/
 # OS
 .DS_Store
+*.tmp
+*.out
+*.zip
+.env
 Thumbs.db
 # Large or generated data (keep data outside Git; document how to get it)
 data/raw/*
