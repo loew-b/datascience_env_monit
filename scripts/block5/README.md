@@ -4,8 +4,8 @@ Environmental Monitoring and Data Analysis · University of Freiburg · WS 2026/
 
 Each script downloads one dataset for **your five towers** (from `tower_sets_block4.csv`, as in Block 4) and writes a tidy CSV with a `site_id` column to `data/external/<dataset>/`. Every script exists in R and in Python and does the same thing. Pick your language.
 
-| # | Script | Dataset | What you get at each tower | Account? | Time |
-|---|---|---|---|---|---|
+| \# | Script | Dataset | What you get at each tower | Account? | Time |
+|----|----|----|----|----|----|
 | 01 | `01_era5land` | ERA5-Land (0.1°, hourly, 1950–) | soil moisture & soil temperature, air temperature, last 10 tower years | **yes, CDS** | 5–30 min (queue) |
 | 02 | `02_worldclim` | WorldClim 2.1 (5′) | 19 bioclimatic variables + monthly normals 1970–2000 | no | 2 min |
 | 03 | `03_dheed` | Dheed (ERA5, 0.25°, 1950–2023) | compound dry-and-hot events during your tower years | no | 1 min |
@@ -18,21 +18,21 @@ Each script downloads one dataset for **your five towers** (from `tower_sets_blo
 
 ## Setup
 
-1. Put the folder `scripts/block5/` into your project folder (the one with `data/raw` from Block 4) and keep `tower_sets_block4.csv` in the project folder.
-2. Set your student number **once** in `block5_sites.R` (`my_student <- "07"`) or `block5_sites.py` (`MY_STUDENT = "07"`), or pass it each time: `Rscript scripts/block5/04_soilgrids.R 07` / `python3 scripts/block5/04_soilgrids.py --student 07`.
-3. Install the packages:
+1.  Put the folder `scripts/block5/` into your project folder (the one with `data/raw` from Block 4) and keep `tower_sets_block4.csv` in the project folder.
+2.  Set your student number **once** in `block5_sites.R` (`my_student <- "07"`) or `block5_sites.py` (`MY_STUDENT = "07"`), or pass it each time: `Rscript scripts/block5/04_soilgrids.R 07` / `python3 scripts/block5/04_soilgrids.py --student 07`.
+3.  Install the packages:
 
-```r
+``` r
 install.packages(c("httr2", "jsonlite", "terra", "geodata", "MODISTools",
                    "ecmwfr", "dplyr", "tidyr", "readr"))
 ```
 
-```bash
+``` bash
 pip install pandas numpy requests rasterio pyproj cdsapi
 pip install xarray zarr        # only for the optional LabelCube check in 03_dheed.py
 ```
 
-4. **Before class, for ERA5-Land only:** make a free account at <https://cds.climate.copernicus.eu>, accept the licence of the dataset *ERA5-Land hourly time-series data from 1950 to present* (tab Download → Terms of use), and store your Personal Access Token (see the top of `01_era5land.R` / `.py`).
+4.  **Before class, for ERA5-Land only:** make a free account at <https://cds.climate.copernicus.eu>, accept the licence of the dataset *ERA5-Land hourly time-series data from 1950 to present* (tab Download → Terms of use), and store your Personal Access Token (see the top of `01_era5land.R` / `.py`).
 
 Run every script from your project folder. Data stay out of Git (`data/` is in your `.gitignore`).
 
@@ -43,7 +43,7 @@ Any order works for 01–08. Run `09_merge` last; it uses whatever is there.
 ## When something fails
 
 | You see | Usually it means |
-|---|---|
+|----|----|
 | `tower_sets_block4.csv not found` | Your working directory is not the project folder. In Positron: *Session → Set Working Directory*, or `setwd()`. |
 | SoilGrids `429` or `503` | Too many requests or the beta service is down. The script waits and retries; otherwise try again in 10 minutes. |
 | ERA5-Land `401` / `403` | Token missing or licence not accepted on the dataset page. |
